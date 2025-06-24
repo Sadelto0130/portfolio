@@ -1,6 +1,6 @@
 import React from 'react'
-import ContactLeft from './contactLeft'
-import ContactRight from './contactRight' 
+import ContactLeft from './ContactLeft'
+import ContactRight from './ContactRight' 
 
 const ContactMain = () => {
   return (

@@ -6,7 +6,7 @@ import SkillsMain from './components/skillsSection/SkillsMain'
 import SubSkills from './components/skillsSection/SubSkills'
 import ExperienceMain from './components/experienceSection/ExperienceMain'
 import ProjectsMain from './components/projectsSection/ProjectsMain'
-import ContactMain from './components/contactSection/contactMain'
+import ContactMain from './components/contactSection/ContactMain'
 import FooterMain from './components/footer/FooterMain'
 
 function App() {

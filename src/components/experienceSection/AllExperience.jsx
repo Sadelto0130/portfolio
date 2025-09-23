@@ -29,14 +29,17 @@ const experienceData = [
     ],
   },
   {
-    project: "BetQuote",
+    project: "PetGuard (In Progress)",
     date: "2025-May to present",
     description:
-      "BetQuote is a React app that calculates betting outcomes based on odds and wager amounts.",
+      "PetGuard is a blog dedicated to exposing and raising awareness about cases of animal abuse, giving a voice to those who cannot speak.",
     technologies: [
       "React", 
       "TailwindCSS", 
       "Vite", 
+      "Node.js",
+      "PostgreSQL",
+      "Express.js"
     ],
   },
 ];

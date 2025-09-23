@@ -4,6 +4,7 @@ import SingleProject from "./SingleProject";
 import criptoImage from "../../assets/cripto_cotizador.jpeg";
 import vetappImage from "../../assets/vetapp.jpeg";
 import underConstructionImage from "../../assets/web_construction.jpg";
+import petguardImage from "../../assets/petguard.jpeg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants.js";
 
@@ -23,10 +24,10 @@ const projects = [
     link: "https://vetapp.up.railway.app/",
   },
   {
-    name: "BetQuote",
+    name: "PetGuard (In Progress)",
     year: "2025",
     align: "left",
-    image: underConstructionImage,
+    image: petguardImage,
     link: "#",
   },
 ];

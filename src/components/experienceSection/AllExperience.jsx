@@ -35,9 +35,7 @@ const experienceData = [
       "PetGuard is a blog dedicated to exposing and raising awareness about cases of animal abuse, giving a voice to those who cannot speak.",
     technologies: [
       "React", 
-      "TailwindCSS", 
       "Vite", 
-      "Node.js",
       "PostgreSQL",
       "Express.js"
     ],

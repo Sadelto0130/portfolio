@@ -24,11 +24,11 @@ const projects = [
     link: "https://vetapp.up.railway.app/",
   },
   {
-    name: "PetGuard (In Progress)",
+    name: "Animora Pet",
     year: "2025",
     align: "left",
     image: petguardImage,
-    link: "#",
+    link: "https://animora-pet.netlify.app/",
   },
 ];
 

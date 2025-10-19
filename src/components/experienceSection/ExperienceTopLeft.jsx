@@ -11,7 +11,7 @@ const  ExperienceTopLeft = () => {
         <ExperienceInfo number='2' text='Projects' />
       </div>
       <p className='text-center text-white'>
-        Fullstack developer with 1 year of experience, 2 web projects, clean code, and fast learning mindset.
+        Fullstack developer with 1 year of experience, 3 web projects, clean code, and fast learning mindset.
       </p>
     </div>
   )

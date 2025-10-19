@@ -1,6 +1,5 @@
-import { useRef } from "react";
-import emailjs from "@emailjs/browser"
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const form = useRef();
@@ -11,33 +10,24 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
+  const [showToast, setShowToast] = useState(false);
 
-  const handleName = (e) => {
-    setName(e.target.value);
-  }
-
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-  }
-
-  const handleMessage = (e) => {
-    setMessage(e.target.value); 
-  }
+  const handleName = (e) => setName(e.target.value);
+  const handleEmail = (e) => setEmail(e.target.value);
+  const handleMessage = (e) => setMessage(e.target.value);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(email_service, email_template, form.current, {
-        publicKey: email_key,
-      })
+      .sendForm(email_service, email_template, form.current, { publicKey: email_key })
       .then(
         () => {
           setName("");
           setEmail("");
           setMessage("");
           setSuccess(true);
-          setTimeout(() => setSuccess(false), 4000);
+          setShowToast(true);
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -45,14 +35,25 @@ const ContactForm = () => {
       );
   };
 
+  // Controla el tiempo del toast y la animación
+  useEffect(() => {
+    if (showToast) {
+      const timer = setTimeout(() => setShowToast(false), 4000); // desaparece después de 4s
+      return () => clearTimeout(timer);
+    }
+  }, [showToast]);
+
   return (
-    <div>
-       {/* Toast flotante */}
-      {success && (
-        <p className="text-orange text-bold">
-          Message sent successfully!
-        </p>
-      )}
+    <div className="relative">
+      {/* Toast flotante con animación */}
+      <div
+        className={`fixed top-5 right-5 bg-green-500 text-white px-4 py-2 rounded shadow-lg z-50
+        transform transition-all duration-500
+        ${showToast ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"}`}
+      >
+        Message sent successfully!
+      </div>
+
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
         <input
           name="from_name"

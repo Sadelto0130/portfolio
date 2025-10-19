@@ -20,7 +20,9 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(email_service, email_template, form.current, { publicKey: email_key })
+      .sendForm(email_service, email_template, form.current, {
+        publicKey: email_key,
+      })
       .then(
         () => {
           setName("");
@@ -47,9 +49,9 @@ const ContactForm = () => {
     <div className="relative">
       {/* Toast flotante con animación */}
       <div
-        className={`fixed top-5 right-5 bg-green-500 text-white px-4 py-2 rounded shadow-lg z-50
-        transform transition-all duration-500
-        ${showToast ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"}`}
+        className={`fixed top-5 right-5 bg-orange text-white px-4 py-2 rounded shadow-lg z-50
+            transform transition-all duration-500
+            ${showToast ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"}`}
       >
         Message sent successfully!
       </div>

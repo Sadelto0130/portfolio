@@ -7,6 +7,7 @@ import underConstructionImage from "../../assets/web_construction.jpg";
 import petguardImage from "../../assets/petguard.jpeg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants.js";
+import ProjectsCarousel from "./ProjectsCarrusel.jsx";
 
 const projects = [
   {
@@ -41,10 +42,10 @@ const ProjectsMain = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
       >
-        <ProjectsText />
       </motion.div>
       <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
-        {projects.map((project, index) => {
+      <ProjectsText />
+        {/* {projects.map((project, index) => {
           return (
             <SingleProject
               key={index}
@@ -55,8 +56,9 @@ const ProjectsMain = () => {
               link={project.link}
             />
           );
-        })}
+        })} */}
       </div>
+      <ProjectsCarousel />
     </div>
   );
 };

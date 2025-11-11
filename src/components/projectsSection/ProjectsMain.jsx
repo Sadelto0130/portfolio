@@ -10,11 +10,11 @@ import { fadeIn } from "../../framerMotion/variants.js";
 
 const projects = [
   {
-    name: "Cripto Quote",
-    year: "2024",
+    name: "Animora Pet",
+    year: "2025",
     align: "left",
-    image: criptoImage,
-    link: "https://cotizadorcriptovs.netlify.app/",
+    image: petguardImage,
+    link: "https://animora-pet.netlify.app/",
   },
   {
     name: "VetAPP",
@@ -24,11 +24,11 @@ const projects = [
     link: "https://vetapp.up.railway.app/",
   },
   {
-    name: "Animora Pet",
-    year: "2025",
+    name: "Cripto Quote",
+    year: "2024",
     align: "left",
-    image: petguardImage,
-    link: "https://animora-pet.netlify.app/",
+    image: criptoImage,
+    link: "https://cotizadorcriptovs.netlify.app/",
   },
 ];
 

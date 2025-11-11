@@ -32,7 +32,7 @@ const experienceData = [
     project: "Animora Pet (In Progress)",
     date: "2025-Agu to 2025-Oct",
     description:
-      "Animora is a blog dedicated to exposing and raising awareness about cases of animal abuse, giving a voice to those who cannot speak.",
+      "Animora is a blog dedicated to exposing and raising awareness about cases of animal abuse.",
     technologies: [
       "React", 
       "Vite", 

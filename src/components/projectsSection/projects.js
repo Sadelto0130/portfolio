@@ -1,8 +1,18 @@
 import animora_img from '../../assets/petguard.jpeg'
 import vetapp_img from '../../assets/vetapp.jpeg'
 import cripto_img from '../../assets/cripto_cotizador.jpeg'
+import landing_img from '../../assets/landingpagebase.jpeg'
 
 export const projects = [
+  {    
+    title: "LandingBuilder Pro",
+    year: "2025",
+    img: landing_img,
+    description:
+      "Landing page dinámica con secciones animadas, selector de planes y formulario integrado con WhatsApp Cloud API y Resend.",
+    tech: ["Next.js", "React", "TailwindCSS", "Framer Motion", "WhatsApp Cloud API", "Resend"],
+    link: "https://landingpagebase.netlify.app/",
+  },
   {
     title: "Animora Pet",
     year: "2025",

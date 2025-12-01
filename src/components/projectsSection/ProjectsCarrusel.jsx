@@ -36,11 +36,6 @@ export default function ProjectsCarousel() {
   return (
     <div className="w-full py-16 relative">
 
-      {/* Title */}
-      <h2 className="text-center text-4xl font-bold text-[#FF6F6F] mb-4">
-        Projects
-      </h2>
-
       {/* Carrusel */}
       <div className="relative flex items-center justify-center">
         {/* Arrow left */}
@@ -66,11 +61,13 @@ export default function ProjectsCarousel() {
               className="cursor-pointer"
               onClick={() => setModal(projects[index])}
             >
-              <img
-                src={projects[index].img}
-                alt={projects[index].title}
-                className="rounded-xl shadow-lg w-full object-cover"
-              />
+              <div className="w-full h-[350px] md:h-[450px] overflow-hidden rounded-xl">
+                <img
+                  src={projects[index].img}
+                  alt={projects[index].title}
+                  className="rounded-xl shadow-lg w-full h-full object-cover"
+                />
+              </div>
             </motion.div>
           </AnimatePresence>
         </div>

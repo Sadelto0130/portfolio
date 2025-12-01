@@ -9,29 +9,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants.js";
 import ProjectsCarousel from "./ProjectsCarrusel.jsx";
 
-const projects = [
-  {
-    name: "Animora Pet",
-    year: "2025",
-    align: "left",
-    image: petguardImage,
-    link: "https://animora-pet.netlify.app/",
-  },
-  {
-    name: "VetAPP",
-    year: "2025",
-    align: "right",
-    image: vetappImage,
-    link: "https://vetapp.up.railway.app/",
-  },
-  {
-    name: "Cripto Quote",
-    year: "2024",
-    align: "left",
-    image: criptoImage,
-    link: "https://cotizadorcriptovs.netlify.app/",
-  },
-];
 
 const ProjectsMain = () => {
   return (
@@ -44,19 +21,7 @@ const ProjectsMain = () => {
       >
       </motion.div>
       <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
-      <ProjectsText />
-        {/* {projects.map((project, index) => {
-          return (
-            <SingleProject
-              key={index}
-              name={project.name}
-              year={project.year}
-              align={project.align}
-              image={project.image}
-              link={project.link}
-            />
-          );
-        })} */}
+        <ProjectsText />
       </div>
       <ProjectsCarousel />
     </div>

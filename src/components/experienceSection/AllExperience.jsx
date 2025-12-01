@@ -9,7 +9,7 @@ const experienceData = [
     project: "Crypto Quote",
     date: "2024",
     description:
-      "Cripto Cotizador is a React app that shows real-time cryptocurrency prices with a clean, responsive interface.",
+    "Cripto Cotizador is a React app that shows real-time cryptocurrency prices with a clean, responsive interface.",
     technologies: [
       "React",
       "Emotion",
@@ -20,7 +20,7 @@ const experienceData = [
     project: "VetAPP",
     date: "2025-Jan to 2025-Mar",
     description:
-      "VetApp is a fullstack app for managing pets and veterinary records with image uploads and user authentication.",
+    "VetApp is a fullstack app for managing pets and veterinary records with image uploads and user authentication.",
     technologies: [
       "React", 
       "TailwindCSS", 
@@ -29,7 +29,7 @@ const experienceData = [
     ],
   },
   {
-    project: "Animora Pet (In Progress)",
+    project: "Animora Pet",
     date: "2025-Agu to 2025-Oct",
     description:
       "Animora is a blog dedicated to exposing and raising awareness about cases of animal abuse.",
@@ -39,6 +39,13 @@ const experienceData = [
       "PostgreSQL",
       "Express.js"
     ],
+  },
+  {
+    project: "LandingBuilder Pro",
+    date: "2025",
+    description:
+      "Dynamic landing page featuring animated sections and a fully integrated contact flow using WhatsApp Cloud API and Resend.",
+    technologies: ["Next.js", "TailwindCSS", "WhatsApp Cloud API", "Resend"],
   },
 ];
 
@@ -54,7 +61,7 @@ const AllExperience = () => {
               variants={fadeIn("right", 0.2)}
                       initial="hidden"
                       whileInView="show"
-                      viewport={{ once: false, amount: 0.7 }}>
+                      viewport={{ once: true, amount: 0.7 }}>
                 <FaArrowRight className="text-6xl text-orange lg:block sm:hidden" />
               </motion.div>
             ) : (

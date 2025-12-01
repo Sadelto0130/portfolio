@@ -9,7 +9,7 @@ export const projects = [
     year: "2025",
     img: landing_img,
     description:
-      "Landing page dinámica con secciones animadas, selector de planes y formulario integrado con WhatsApp Cloud API y Resend.",
+      "Dynamic landing page featuring animated sections, pricing selector, and a fully integrated contact flow using WhatsApp Cloud API and Resend.",
     tech: ["Next.js", "React", "TailwindCSS", "Framer Motion", "WhatsApp Cloud API", "Resend"],
     link: "https://landingpagebase.netlify.app/",
   },
